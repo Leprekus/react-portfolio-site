@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
     <ButtonGroup>
-      <Button component={Link} to='about-me'>About Me</Button>
+      <Button component={Link} to='/'>About Me</Button>
       <Button component={Link} to='projects'>Projects</Button>
       <Button component={Link} to='projects'>Contact</Button>
     </ButtonGroup>

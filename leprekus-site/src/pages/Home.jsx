@@ -29,22 +29,21 @@ function Home () {
                     <Grid item >
                         <Item>
                             <CardHeader
-                            title='Hard Skillset'
+                            title='Hard Skills'
                             />
                             <Typography color={'whitesmoke'} fontSize={20} textAlign='justify'>
                             End to End Testing <br/>
                             Test Driven Development<br/>
                             Responsive and intuitive interface design <br/>
                             API Integration <br/>
-
-                            Fronten
+                            Version Control <br/>
                             </Typography>
                         </Item>
                     </Grid>
                     <Grid item >
                         <Item>
                             <CardHeader
-                            title='Soft Skillset'
+                            title='Soft Skills'
                             />
                             <Typography color={'whitesmoke'} fontSize={20} textAlign='justify'>
                             Goal Driven <br/>
@@ -52,6 +51,7 @@ function Home () {
                             Critical Thinking <br/>
                             Communication <br/>
                             Team Oriented <br/>
+                            
                             </Typography>
                         </Item>
                     </Grid>
@@ -69,6 +69,7 @@ function Home () {
                             HTML <br/>
                             CSS <br/>
                             JS 
+                            Git
                             </Typography>
                         </Item>
                     </Grid>
