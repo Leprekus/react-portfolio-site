@@ -29,16 +29,46 @@ function Home () {
                     <Grid item >
                         <Item>
                             <CardHeader
-                            title='Skillset'
+                            title='Hard Skillset'
                             />
                             <Typography color={'whitesmoke'} fontSize={20} textAlign='justify'>
-                            I currently do
-                            end to end testing and am profficient in
-                            React and Redux. My biggest passion for
-                            development stem from two things: being
-                            able to bring to life whatever comes to
-                            mind and being able to optimize it in
-                            order to achieve maximum performance.
+                            End to End Testing <br/>
+                            Test Driven Development<br/>
+                            Responsive and intuitive interface design <br/>
+                            API Integration <br/>
+
+                            Fronten
+                            </Typography>
+                        </Item>
+                    </Grid>
+                    <Grid item >
+                        <Item>
+                            <CardHeader
+                            title='Soft Skillset'
+                            />
+                            <Typography color={'whitesmoke'} fontSize={20} textAlign='justify'>
+                            Goal Driven <br/>
+                            Problem Solving <br/>
+                            Critical Thinking <br/>
+                            Communication <br/>
+                            Team Oriented <br/>
+                            </Typography>
+                        </Item>
+                    </Grid>
+                    <Grid item >
+                        <Item>
+                            <CardHeader
+                            title='Techonologies'
+                            />
+                            <Typography color={'whitesmoke'} fontSize={20} textAlign='justify'>
+                            React<br/>
+                            Redux<br/>
+                            React Router <br/>
+                            Cypress <br/>
+                            Jest <br/>
+                            HTML <br/>
+                            CSS <br/>
+                            JS 
                             </Typography>
                         </Item>
                     </Grid>
@@ -55,22 +85,7 @@ function Home () {
                             </CardContent>
                         </Item>
                     </Grid>
-                    <Grid item >
-                        <Item>
-                            <CardContent>
-                                <CardHeader
-                                title='Work Experience'
-                                />
-                                <Typography color={'whitesmoke'} fontSize={20} textAlign='justify'>
-                                I am a self taught frontend engineer.
-                                I completed the Codecademy Frontend Engineer Career Path.
-                                </Typography>
-                            </CardContent>
-                        </Item>
-                    </Grid>
                 </Grid>
-                
-
             </Grid>
         </ThemeProvider>
     )
