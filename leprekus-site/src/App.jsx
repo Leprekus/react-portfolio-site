@@ -4,16 +4,26 @@ import './App.css'
 import { Outlet } from 'react-router-dom'
 import { ButtonGroup, Grid, Button } from '@mui/material'
 import { Link } from 'react-router-dom'
+import { HamburgerMenu } from './components/hamburguerMenu/HamburgerMenu'
 function App() {
-  const [count, setCount] = useState(0)
-
+  const nav = {
+    height: '10rem',
+    maxWidth: '100%',
+    backgroundColor: '#000',
+    display: 'flex',
+    justifyContent: 'space-between'
+  }
   return (
     <div className="App">
-    <ButtonGroup>
+      <nav style={nav} role='navigation'>
+        <h2>Leprekus</h2> 
+        <HamburgerMenu/>
+      </nav>
+    
       <Button component={Link} to='/'>About Me</Button>
       <Button component={Link} to='projects'>Projects</Button>
       <Button component={Link} to='projects'>Contact</Button>
-    </ButtonGroup>
+
       <Outlet/>
     </div>
   )
