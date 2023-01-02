@@ -7,16 +7,27 @@ import { Link } from 'react-router-dom'
 import { HamburgerMenu } from './components/hamburguerMenu/HamburgerMenu'
 function App() {
   const nav = {
-    height: '10rem',
+    height: '5rem',
     maxWidth: '100%',
     backgroundColor: '#000',
     display: 'flex',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    alignItems:'baseline'
+
+  }
+  const textWrapper = {
+    display: 'flex',
+    height: '100%',
+    width: 'fit-content',
+    alignItems: 'center',
+    marginLeft: '2rem'
   }
   return (
     <div className="App">
       <nav style={nav} role='navigation'>
-        <h2>Leprekus</h2> 
+        <div style={textWrapper}>
+          <h2>Leprekus</h2> 
+        </div>
         <HamburgerMenu/>
       </nav>
     

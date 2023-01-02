@@ -2,7 +2,6 @@
 {
   display: block;
   position: relative;
-  top: 50px;
   left: -50px;
   
   z-index: 1;
@@ -120,4 +119,13 @@
 #menuToggle input:checked ~ ul
 {
   transform: none;
+}
+
+@media only screen and (max-width: 600px) {
+  #menuToggle input:checked ~ ul
+{
+  transform: none;
+  top: 160px;
+  width: 100vw;
+}
 }
