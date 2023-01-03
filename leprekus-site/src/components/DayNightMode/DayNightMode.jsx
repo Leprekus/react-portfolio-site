@@ -6,10 +6,10 @@ export const DayNightMode = () => {
         xAxis === '30%' ? setXAxis('100%') : setXAxis('30%')
     }
     return (
-        <div class='toggle-switch'>
+        <div className='toggle-switch'>
             <label>
                 <input type='checkbox'/>
-                <span class='slider'/>
+                <span className='slider'/>
             </label>
         </div>    
     )
