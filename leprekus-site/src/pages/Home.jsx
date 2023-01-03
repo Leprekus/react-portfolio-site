@@ -23,12 +23,13 @@ function Home () {
             <Grid container item display='inline-block' sm={4} md={4} justifySelf='start' paddingLeft='1rem'>
                 {
                     icons['light'].map((icon, i) => {
-                        let timeout = 1000 + i * 1000
+
                         return (
                         <Bevel
+                        key={i}
                         width={90}
                         height={100}
-                        timeout={timeout}
+                        timeout={1000}
                         src={icon}
                         />)
                     })
