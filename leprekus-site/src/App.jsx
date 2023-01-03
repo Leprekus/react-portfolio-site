@@ -5,6 +5,7 @@ import { Outlet } from 'react-router-dom'
 import { ButtonGroup, Grid, Button } from '@mui/material'
 import { Link } from 'react-router-dom'
 import { HamburgerMenu } from './components/hamburguerMenu/HamburgerMenu'
+import { DayNightMode } from './components/DayNightMode/DayNightMode'
 function App() {
   const nav = {
     height: '5rem',
@@ -20,21 +21,33 @@ function App() {
     height: '100%',
     width: 'fit-content',
     alignItems: 'center',
-    marginLeft: '2rem'
+    marginLeft: '2rem',
+    fontFamily: 'Hind, sans-serif',
+    fontFamily: 'Lobster, cursive'
+  }
+  const group = {
+    display: 'flex',
+    width: '60%',
+    marginLeft: '25%',
+    justifyContent: 'space-between'
   }
   return (
     <div className="App">
       <nav style={nav} role='navigation'>
         <div style={textWrapper}>
-          <h2>Leprekus</h2> 
+          <h2>Leprekus</h2>
         </div>
         <HamburgerMenu/>
       </nav>
     
-      <Button component={Link} to='/'>About Me</Button>
-      <Button component={Link} to='projects'>Projects</Button>
-      <Button component={Link} to='projects'>Contact</Button>
-
+      <div style={group}>
+        <ButtonGroup>
+          <Button component={Link} to='/'>About Me</Button>
+          <Button component={Link} to='projects'>Projects</Button>
+          <Button component={Link} to='projects'>Contact</Button>
+        </ButtonGroup>
+        <DayNightMode/>
+      </div>
       <Outlet/>
     </div>
   )
