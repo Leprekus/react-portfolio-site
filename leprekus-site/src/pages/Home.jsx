@@ -1,8 +1,10 @@
 import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
 import { Card, CardContent, CardHeader, Grid, Paper, Typography } from '@mui/material'
-import memoji from '../assets/memoji.png'
 import { Bevel } from '../components/Bevel';
 import { Post } from '../components/Post';
+import memoji from '../assets/memoji.png'
+import userLight from '../assets/userLight.png'
+import userDark from '../assets/userDark.png'
 function Home () {
     const bevel = {
         backgroundColor: 'red',
@@ -14,7 +16,7 @@ function Home () {
         <>
         <Grid container direction='row' sm={4} md={12}> 
             <Grid container item display='inline-block' sm={4} md={4} justifySelf='start' paddingLeft='1rem'>
-                <Bevel width={90} height={100} timeout={1000}/>
+                <Bevel width={90} height={100} timeout={1000} src={''}/>
                 <Bevel width={90} height={100} timeout={2000}/>
                 <Bevel width={90} height={100} timeout={3000}/>
                 <Bevel width={90} height={100} timeout={3500}/>
