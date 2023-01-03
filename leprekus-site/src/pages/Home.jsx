@@ -12,16 +12,24 @@ function Home () {
     }
     return (
         <>
-        <Bevel width={90} height={100}/>
-        <Bevel width={90} height={100}/>
-        <Bevel width={90} height={100}/>
-        <Bevel width={90} height={100}/>
-        <img src={memoji}/>
-        <Typography color='black' textAlign='justify'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ab iure, eius veritatis ducimus qui obcaecati tempora, quidem sed, facere optio incidunt earum veniam asperiores ratione quaerat vel sapiente! Ratione.
-        Consequuntur animi molestias, repellat placeat commodi nostrum labore aperiam accusamus dolorum tenetur numquam quibusdam iste et error ut aliquid architecto odit earum iure! Id reiciendis consequatur corporis quas dolor quidem.
-        Rerum veritatis reiciendis ipsum quaerat esse! Ut mollitia in recusandae similique ea sunt labore ratione nostrum reprehenderit expedita quia, est voluptates facere iure sapiente voluptatem eveniet quos, doloremque dolore assumenda.
-        </Typography>
-        <Post/>
+        <Grid container direction='row' sm={4} md={12}> 
+            <Grid container item display='inline-block' sm={4} md={4} justifySelf='start'>
+                <Bevel width={90} height={100}/>
+                <Bevel width={90} height={100}/>
+                <Bevel width={90} height={100}/>
+                <Bevel width={90} height={100}/>
+            </Grid>
+            <Grid container item sm={4} md={4} justifyContent='center'>
+                <img src={memoji}/>
+                <Typography color='black' textAlign='justify'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ab iure, eius veritatis ducimus qui obcaecati tempora, quidem sed, facere optio incidunt earum veniam asperiores ratione quaerat vel sapiente! Ratione.
+                Consequuntur animi molestias, repellat placeat commodi nostrum labore aperiam accusamus dolorum tenetur numquam quibusdam iste et error ut aliquid architecto odit earum iure! Id reiciendis consequatur corporis quas dolor quidem.
+                Rerum veritatis reiciendis ipsum quaerat esse! Ut mollitia in recusandae similique ea sunt labore ratione nostrum reprehenderit expedita quia, est voluptates facere iure sapiente voluptatem eveniet quos, doloremque dolore assumenda.
+                </Typography>
+            </Grid>
+            <Grid container item sm={4} md={4} justifyContent='end'> 
+                <Post/>
+            </Grid>
+        </Grid>
         </>
         )
     }
