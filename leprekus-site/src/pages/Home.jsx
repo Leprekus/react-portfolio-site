@@ -1,6 +1,6 @@
 import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
 import { Card, CardContent, CardHeader, Grid, Paper, Typography } from '@mui/material'
-import { Bevel } from '../components/Bevel';
+import { Bevel } from '../components/Bevel/Bevel';
 import { Post } from '../components/Post';
 import memoji from '../assets/memoji.png'
 import userLight from '../assets/userLight.png'
@@ -13,20 +13,26 @@ import cloudLight from '../assets/cloudLight.png'
 import cloudDark from '../assets/cloudDark.png'
 
 function Home () {
-    const bevel = {
-        backgroundColor: 'red',
-        width: 140,
-        height: 150,
-        clipPath: 'polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%)',
+    const icons = {
+        light: [userLight, cpuLight, cvLight, cloudLight],
+        dark: [userDark, cpuDark, cvDark, cloudDark]
     }
     return (
         <>
         <Grid container direction='row' sm={4} md={12}> 
             <Grid container item display='inline-block' sm={4} md={4} justifySelf='start' paddingLeft='1rem'>
-                <Bevel width={90} height={100} timeout={1000} src={''}/>
-                <Bevel width={90} height={100} timeout={2000}/>
-                <Bevel width={90} height={100} timeout={3000}/>
-                <Bevel width={90} height={100} timeout={3500}/>
+                {
+                    icons['light'].map((icon, i) => {
+                        let timeout = 1000 + i * 1000
+                        return (
+                        <Bevel
+                        width={90}
+                        height={100}
+                        timeout={timeout}
+                        src={icon}
+                        />)
+                    })
+                }
             </Grid>
             <Grid container item sm={4} md={4} justifyContent='center'>
                 <img src={memoji}/>
