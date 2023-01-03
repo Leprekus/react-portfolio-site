@@ -59,7 +59,7 @@ export const Bevel = ({ width=150, height=150, src='', timeout=1000, title, text
             <div></div>
             <Zoom in={show} timeout={500} mountOnEnter unmountOnExit>
                 <span style={textBox} ref={textBoxRef} onMouseOver={() => handleMouseEvent(true)} onMouseLeave={() => handleMouseEvent(false)}>
-                    <Typography variant='h3'>{ title }</Typography>
+                    <Typography variant='h5'>{ title }</Typography>
                     <Typography variant='p' textAlign='justify'>{ text }</Typography>
                 </span>   
             </Zoom>

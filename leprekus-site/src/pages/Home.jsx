@@ -17,6 +17,8 @@ function Home () {
         light: [userLight, cpuLight, cvLight, cloudLight],
         dark: [userDark, cpuDark, cvDark, cloudDark]
     }
+    const titles = ['Soft Skills', 'Technologies','Hard Skills', 'Experience']
+    const text = ['Goal Driven Problem Solving Critical Thinking Communication Team Oriented', 'React Redux React Router  Cypress  Jest  HTML  CSS  Git', 'End to End Testing Test Driven Development Responsive and intuitive interface design API Integration Version Control','Self Taught. Completed Codecademy Frontend Engineer Path, Currently Awaiting to start a bachelor in Computer Science.']
     return (
         <>
         <Grid container direction='row' sm={4} md={12}> 
@@ -31,6 +33,8 @@ function Home () {
                         height={100}
                         timeout={1000}
                         src={icon}
+                        title={titles[i]}
+                        text={text[i]}
                         />)
                     })
                 }
@@ -81,11 +85,7 @@ function Home () {
     //                     title='Soft Skills'
     //                     />
     //                     <Typography color={'whitesmoke'} fontSize={20} textAlign='justify'>
-    //                     Goal Driven <br/>
-    //                     Problem Solving <br/>
-    //                     Critical Thinking <br/>
-    //                     Communication <br/>
-    //                     Team Oriented <br/>
+    //                     Goal Driven Problem Solving Critical Thinking Communication Team Oriented
                         
     //                     </Typography>
     //                 </Item>
@@ -96,15 +96,7 @@ function Home () {
     //                     title='Techonologies'
     //                     />
     //                     <Typography color={'whitesmoke'} fontSize={20} textAlign='justify'>
-    //                     React<br/>
-    //                     Redux<br/>
-    //                     React Router <br/>
-    //                     Cypress <br/>
-    //                     Jest <br/>
-    //                     HTML <br/>
-    //                     CSS <br/>
-    //                     JS 
-    //                     Git
+    //                     React Redux React Router  Cypress  Jest  HTML  CSS  Git
     //                     </Typography>
     //                 </Item>
     //             </Grid>
