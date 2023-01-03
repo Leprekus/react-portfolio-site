@@ -21,8 +21,8 @@ function Home () {
     const text = ['Goal Driven Problem Solving Critical Thinking Communication Team Oriented', 'React Redux React Router  Cypress  Jest  HTML  CSS  Git', 'End to End Testing Test Driven Development Responsive and intuitive interface design API Integration Version Control','Self Taught. Completed Codecademy Frontend Engineer Path, Currently Awaiting to start a bachelor in Computer Science.']
     return (
         <>
-        <Grid container direction='row' sm={4} md={12}> 
-            <Grid container item display='inline-block' sm={4} md={4} justifySelf='start' paddingLeft='1rem'>
+        <Grid container direction='row' md={12} rowGap={10} margin='auto'> 
+            <Grid container item display='inline-block' sm={12} md={4} lg={4} xl={3} justifyContent='end' paddingLeft='1rem'>
                 {
                     icons['light'].map((icon, i) => {
 
@@ -39,14 +39,14 @@ function Home () {
                     })
                 }
             </Grid>
-            <Grid container item sm={4} md={4} justifyContent='center'>
+            <Grid container item sm={12} md={3} lg={4} xl={3} justifyContent='center'>
                 <img src={memoji}/>
                 <Typography color='black' textAlign='justify'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ab iure, eius veritatis ducimus qui obcaecati tempora, quidem sed, facere optio incidunt earum veniam asperiores ratione quaerat vel sapiente! Ratione.
                 Consequuntur animi molestias, repellat placeat commodi nostrum labore aperiam accusamus dolorum tenetur numquam quibusdam iste et error ut aliquid architecto odit earum iure! Id reiciendis consequatur corporis quas dolor quidem.
                 Rerum veritatis reiciendis ipsum quaerat esse! Ut mollitia in recusandae similique ea sunt labore ratione nostrum reprehenderit expedita quia, est voluptates facere iure sapiente voluptatem eveniet quos, doloremque dolore assumenda.
                 </Typography>
             </Grid>
-            <Grid container item sm={4} md={4} justifyContent='end'paddingRight='1rem'> 
+            <Grid container item sm={12} md={5} lg={4} xl={3} justifyContent='end'paddingRight='1rem'> 
                 <Post/>
             </Grid>
         </Grid>
