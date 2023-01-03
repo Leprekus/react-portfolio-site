@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { Credits } from '../../pages/Credits'
 import { NavBar } from '../Navbar/Navbar'
 import './hamburgerMenu.css'
@@ -20,11 +20,15 @@ export const HamburgerMenu = () =>{
         
         <ul id="menu">
           <a href="#"><li>Home</li></a>
-          <a href="#"><li>About</li></a>
-          <a href="#"><li>Info</li></a>
-          <a href="#"><li>Contact</li></a>
+          <a href="#"><li>Github</li></a>
+          <a href="#"><li>Credits</li></a>
           <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
         </ul>
+      </div>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
+        <NavLink to='/' className={({isActive}) => isActive ? 'active': 'nav-button'}>About Me</NavLink>
+        <NavLink to='/projects' className={({isActive}) => isActive ? 'active': 'nav-button'}>Projects</NavLink>
+        <NavLink to='/contact-me' className={({isActive}) => isActive ? 'active': 'nav-button'}>Contact Me</NavLink>
       </div>
       {/* <Credits displayCredits={displayCredits} setDisplayCredits={setDisplayCredits}/> */}
     </nav>

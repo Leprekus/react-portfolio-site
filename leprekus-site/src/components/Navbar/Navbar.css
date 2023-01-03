@@ -10,4 +10,6 @@ aside {
     height: calc(100% - 10rem);
     z-index: 100;
     background-color: red;
+    box-shadow: 0 8px 4px 2px rgba(0,0,0,.4);
+
 }
