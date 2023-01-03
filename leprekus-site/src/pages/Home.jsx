@@ -5,6 +5,13 @@ import { Post } from '../components/Post';
 import memoji from '../assets/memoji.png'
 import userLight from '../assets/userLight.png'
 import userDark from '../assets/userDark.png'
+import cpuLight from '../assets/cpuLight.png'
+import cpuDark from '../assets/cpuDark.png'
+import cvLight from '../assets/cvLight.png'
+import cvDark from '../assets/cvDark.png'
+import cloudLight from '../assets/cloudLight.png'
+import cloudDark from '../assets/cloudDark.png'
+
 function Home () {
     const bevel = {
         backgroundColor: 'red',

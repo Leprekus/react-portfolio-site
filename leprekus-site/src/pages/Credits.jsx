@@ -41,6 +41,16 @@ export const Credits = ({ displayCredits, setDisplayCredits }) => {
                 </a>
                 <p>Creator of "CPU" Icon</p>
                 <hr/>
+                <a href="https://www.flaticon.com/authors/prosymbols-premium" target='_blank'>
+                    <h3>Prosymbols Premium</h3>
+                </a>
+                <p>Creator of "CV" Icon</p>
+                <hr/>
+                <a href="https://www.flaticon.com/authors/smashicons" target='_blank'>
+                    <h3>Smashicons</h3>
+                </a>
+                <p>Creator of "Cloud" Icon</p>
+                <hr/>
             </div>
         </div>
     )
