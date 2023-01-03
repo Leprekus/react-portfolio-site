@@ -13,11 +13,11 @@ function Home () {
     return (
         <>
         <Grid container direction='row' sm={4} md={12}> 
-            <Grid container item display='inline-block' sm={4} md={4} justifySelf='start'>
-                <Bevel width={90} height={100}/>
-                <Bevel width={90} height={100}/>
-                <Bevel width={90} height={100}/>
-                <Bevel width={90} height={100}/>
+            <Grid container item display='inline-block' sm={4} md={4} justifySelf='start' paddingLeft='1rem'>
+                <Bevel width={90} height={100} timeout={1000}/>
+                <Bevel width={90} height={100} timeout={2000}/>
+                <Bevel width={90} height={100} timeout={3000}/>
+                <Bevel width={90} height={100} timeout={3500}/>
             </Grid>
             <Grid container item sm={4} md={4} justifyContent='center'>
                 <img src={memoji}/>
@@ -26,7 +26,7 @@ function Home () {
                 Rerum veritatis reiciendis ipsum quaerat esse! Ut mollitia in recusandae similique ea sunt labore ratione nostrum reprehenderit expedita quia, est voluptates facere iure sapiente voluptatem eveniet quos, doloremque dolore assumenda.
                 </Typography>
             </Grid>
-            <Grid container item sm={4} md={4} justifyContent='end'> 
+            <Grid container item sm={4} md={4} justifyContent='end'paddingRight='1rem'> 
                 <Post/>
             </Grid>
         </Grid>

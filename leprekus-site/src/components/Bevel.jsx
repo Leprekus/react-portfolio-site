@@ -1,4 +1,5 @@
-export const Bevel = ({ width=150, height=150, src=''}) => {
+import { Grow } from '@mui/material'
+export const Bevel = ({ width=150, height=150, src='', timeout=1000}) => {
     const bevel = {
         backgroundColor: 'red',
         width: width,
@@ -7,7 +8,13 @@ export const Bevel = ({ width=150, height=150, src=''}) => {
         backgroundImage: `url(${src})`
     }
     return (
-        <div style={bevel}>
-        </div>
+        <Grow 
+        in={true}
+        style={{ transformOrigin: '0 0 0' }}
+        {...(true ? { timeout: timeout } : {})}
+        >
+            <div style={bevel}>
+            </div>
+        </Grow>
         )
 }
