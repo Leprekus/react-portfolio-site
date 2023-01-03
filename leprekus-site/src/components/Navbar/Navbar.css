@@ -4,7 +4,12 @@ aside {
     align-items: center;
     justify-content: flex-end;
     padding: 4rem;
-    height: 100vh;
-    width: 10rem;
+
+  
+    width: 5rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
     background-color: red;
 }
