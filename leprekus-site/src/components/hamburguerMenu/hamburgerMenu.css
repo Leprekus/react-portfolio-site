@@ -3,7 +3,7 @@ nav {
   height: 10rem;
   /* position: relative;
   left: 0; */
-  background-color: red;
+  background-color: #27282c;
 }
 .active {
   padding: 1rem;
@@ -43,6 +43,12 @@ nav {
 .nav-button:hover::after {
   transition: .2s ease-in;
   width: 54px; 
+}
+
+.subheader {
+  position: relative;
+  top: 40px;
+  right: 80px;
 }
  
  #menuToggle

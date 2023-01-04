@@ -24,6 +24,7 @@ export const HamburgerMenu = () =>{
           <Link><li>Credits</li></Link>
           <Link href="https://erikterwan.com/" target="_blank"><li>Show me more</li></Link>
         </ul>
+        <h2 className='subheader'>Front End Engineer</h2>
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
         <NavLink to='/' className={({isActive}) => isActive ? 'active': 'nav-button'}>About Me</NavLink>
