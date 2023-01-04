@@ -16,7 +16,9 @@
   -webkit-text-size-adjust: 100%;
 }
 
-
+p, button, a {
+  font-family: 'Raleway', sans-serif;
+}
 
 a {
   font-weight: 500;

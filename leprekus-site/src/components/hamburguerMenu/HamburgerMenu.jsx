@@ -27,9 +27,9 @@ export const HamburgerMenu = () =>{
         <h2 className='subheader'>Front End Engineer</h2>
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
-        <NavLink to='/' className={({isActive}) => isActive ? 'active': 'nav-button'}>About Me</NavLink>
-        <NavLink to='/projects' className={({isActive}) => isActive ? 'active': 'nav-button'}>Projects</NavLink>
-        <NavLink to='/contact-me' className={({isActive}) => isActive ? 'active': 'nav-button'}>Contact Me</NavLink>
+        <NavLink to='/' className={({isActive}) => isActive ? 'active': 'nav-button'}>ABOUT ME</NavLink>
+        <NavLink to='/projects' className={({isActive}) => isActive ? 'active': 'nav-button'}>PROJECTS</NavLink>
+        <NavLink to='/contact-me' className={({isActive}) => isActive ? 'active': 'nav-button'}>CONTACT ME</NavLink>
       </div>
       {/* <Credits displayCredits={displayCredits} setDisplayCredits={setDisplayCredits}/> */}
     </nav>

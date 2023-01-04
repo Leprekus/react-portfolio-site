@@ -12,9 +12,9 @@ export const NavBar = () => {
                 <h1 className="header">Rodriguez</h1>
                 <h1 className="header">Raul</h1>
             </div>
+            <a className="icon" href=""><img src={githubLight} alt='icon'/></a>
             <a className="icon" href=""><img src={instagramLight} alt='icon'/></a>
             <a className="icon" href=""><img src={youtubeLight} alt='icon'/></a>
-            <a className="icon" href=""><img src={githubLight} alt='icon'/></a>
         </aside>
         </>
     )
