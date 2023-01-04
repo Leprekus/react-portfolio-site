@@ -9,12 +9,22 @@ export const Page = ({ title, text, contact }) => {
         
 
     }
+    const shapeOutside = {
+        width:'fit-content',
+        height:'fit-content',
+        display: 'inline-block',
+        // clipPath: 'polygon(100% 0, 100% 50%, 50% 50%, 50% 100%, 0 100%, 0 0)',
+        // wordWrap: 'break-word'
+    }
     return (
         <section style={style} className='tesoku'>
             <Grid container height={'100%'} flexDirection='column' justifyContent='space-between'>
-                <Grid container item justifyContent='center' height='66.66%' sx={{ padding: '10rem'}}>
+                <Grid container item justifyContent='center' height='66.66%' sx={{ padding: '10rem'}} >
+
                     <h1>{ title }</h1>
-                    <p>{ text }</p>
+                    <div style={{ float:'left'}}>
+                        <p>{ text }</p>
+                    </div>
                     <p style={{ position: 'relative', top: 100}}><strong>See more</strong></p>
                     { contact && <ContactForm/> }
                 </Grid>

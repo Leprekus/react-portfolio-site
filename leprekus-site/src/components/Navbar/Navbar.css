@@ -29,6 +29,11 @@ aside {
         font-size: 1.8rem;
     }
 }
+@media only screen and (max-height: 500px) {
+    .header {
+        font-size: 1.8rem;
+    }
+}
 
 
 .icon {
