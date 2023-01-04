@@ -1,5 +1,5 @@
 import { Grid } from '@mui/material'
-
+import Carousel, { CarouselItem } from '../components/Carousel/Carousel'
 export const HomePageNew = () => {
     const style = {
         backgroundColor: 'purple',
@@ -20,9 +20,14 @@ export const HomePageNew = () => {
                     <button style={{ height: '20%'}}>previous</button>
                     <button style={{ height: '20%'}}>next</button>
                     <Grid container item alignItems='flex-end'>
-                        <span style={{backgroundColor: 'red', minHeight: 250, width: '33.33%'}}></span>
+                        {/* <span style={{backgroundColor: 'red', minHeight: 250, width: '33.33%'}}></span>
                         <span style={{backgroundColor: 'blue', minHeight: 250, width: '33.33%'}}></span>
-                        <span style={{backgroundColor: 'green', minHeight: 250, width: '33.33%'}}></span>
+                        <span style={{backgroundColor: 'green', minHeight: 250, width: '33.33%'}}></span> */}
+                        <Carousel>
+                            <CarouselItem>Item 1</CarouselItem>
+                            <CarouselItem>Item 2</CarouselItem>
+                            <CarouselItem>Item 3</CarouselItem>
+                        </Carousel>
                     </Grid>
                 </Grid>
             </Grid>
