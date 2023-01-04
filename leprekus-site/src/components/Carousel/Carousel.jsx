@@ -12,7 +12,7 @@ export const CarouselItem = ({ children, width }) => {
     )
 }
 
-const Carousel = ({ children }) => {
+const Carousel = ({ children, innerWidth=100, translate=100 }) => {
     const [activeIndex, setActiveIndex] = useState(0)
     const updateIndex = (newIndex) => {
         if(newIndex < 0) {
@@ -29,25 +29,25 @@ const Carousel = ({ children }) => {
     //     return () => { if(interval) clearInterval(interval) }
     // })
     return (
-        <div className='carousel'>
-            <button onClick={() => updateIndex(activeIndex - 1)}>Previous</button>
-            <button onClick={() => updateIndex(activeIndex + 1)}>Next</button>
-            <div className="inner" style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
+        <div className='carousel' style={{ width: '90%', margin: 'auto' }}>
+            <button className='button-previous' onClick={() => updateIndex(activeIndex - 1)}></button>
+            <button className='button-next' onClick={() => updateIndex(activeIndex + 1)}></button>
+            <div className="inner" style={{ transform: `translateX(-${activeIndex * translate}%)`, width: '100%' }}>
                 {React.Children.map(children, (child, index) => {
                     //100width => displays 1 item
                     //50 widtgh => displays 2 items and so on
-                    return React.cloneElement(child, { width: '100%' })
+                    return React.cloneElement(child, { width: `${innerWidth}%` })
                 })}
             </div>
             {React.Children.map(children, (child, index) => {
                 return (
                     <button 
-                    style={{ position: 'relative', bottom: 25 }}
+                    style={{ position: 'relative', bottom: 25, margin: ' 0 0.1rem'}}
                     className={index === activeIndex ? 'active-item' : 'unactive-item'}
                     onClick={() => {
                         updateIndex(index)
                     }}
-                    >{ index + 1 }</button>
+                    ></button>
                 )
             })}
         </div>

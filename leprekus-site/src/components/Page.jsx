@@ -18,11 +18,14 @@ export const Page = ({ title, text, contact }) => {
                     <p style={{ position: 'relative', top: 100}}><strong>See more</strong></p>
                     { contact && <ContactForm/> }
                 </Grid>
-                <Grid container item alignItems='flex-end'>
+                <Grid container item alignItems='flex-end' width='100%'>
                     {/* <span style={{backgroundColor: 'red', minHeight: 250, width: '33.33%'}}></span>
                     <span style={{backgroundColor: 'blue', minHeight: 250, width: '33.33%'}}></span>
                     <span style={{backgroundColor: 'green', minHeight: 250, width: '33.33%'}}></span> */}
-                    <Carousel style={{ width: '100%' }}>
+                    <Carousel>
+                        <CarouselItem>Item 1</CarouselItem>
+                        <CarouselItem>Item 2</CarouselItem>
+                        <CarouselItem>Item 3</CarouselItem>
                         <CarouselItem>Item 1</CarouselItem>
                         <CarouselItem>Item 2</CarouselItem>
                         <CarouselItem>Item 3</CarouselItem>
