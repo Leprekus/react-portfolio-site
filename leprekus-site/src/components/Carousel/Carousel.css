@@ -18,3 +18,12 @@ translates to move items around
     background-color: green;
     color: #FFF;
 }
+
+.active-item {
+    color: #000;
+    background-color: #FFF;
+}
+.unactive-item {
+    color: #FFF;
+    background-color: #000;
+}

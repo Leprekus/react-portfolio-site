@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import './Carousel.css'
 
@@ -16,12 +16,18 @@ const Carousel = ({ children }) => {
     const [activeIndex, setActiveIndex] = useState(0)
     const updateIndex = (newIndex) => {
         if(newIndex < 0) {
-            newIndex = 0; 
+            newIndex =  React.Children.count(children) - 1; 
         } else if (newIndex >= children.length) {
-            newIndex = React.Children.count(children) - 1
+            newIndex = 0;
         }
         setActiveIndex(newIndex)
     }
+    // useEffect(()=>{
+    //     const interval = setInterval(() => {
+    //         updateIndex(activeIndex + 1)
+    //     }, 5000)
+    //     return () => { if(interval) clearInterval(interval) }
+    // })
     return (
         <div className='carousel'>
             <button onClick={() => updateIndex(activeIndex - 1)}>Previous</button>
@@ -33,6 +39,17 @@ const Carousel = ({ children }) => {
                     return React.cloneElement(child, { width: '100%' })
                 })}
             </div>
+            {React.Children.map(children, (child, index) => {
+                return (
+                    <button 
+                    style={{ position: 'relative', bottom: 25 }}
+                    className={index === activeIndex ? 'active-item' : 'unactive-item'}
+                    onClick={() => {
+                        updateIndex(index)
+                    }}
+                    >{ index + 1 }</button>
+                )
+            })}
         </div>
     )
 }
