@@ -19,11 +19,6 @@
     cursor: pointer;
   }
   
-  input {
-    position: absolute;
-    display: none;
-  }
-  
   .slider {
     position: absolute;
     width: 100%;

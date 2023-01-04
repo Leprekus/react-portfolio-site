@@ -1,6 +1,7 @@
 import { Grid } from '@mui/material'
 import Carousel, { CarouselItem } from './Carousel/Carousel'
-export const Page = ({ title, text }) => {
+import { ContactForm } from './ContactForm/ContactForm'
+export const Page = ({ title, text, contact }) => {
     const style = {
         backgroundColor: '#FFF',
         width: '100%',
@@ -15,6 +16,7 @@ export const Page = ({ title, text }) => {
                     <h1>{ title }</h1>
                     <p>{ text }</p>
                     <p style={{ position: 'relative', top: 100}}><strong>See more</strong></p>
+                    { contact && <ContactForm/> }
                 </Grid>
                 <Grid container item alignItems='flex-end'>
                     {/* <span style={{backgroundColor: 'red', minHeight: 250, width: '33.33%'}}></span>
