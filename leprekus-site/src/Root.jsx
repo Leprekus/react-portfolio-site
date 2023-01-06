@@ -1,25 +1,24 @@
 import { NavBar } from "./components/Navbar/Navbar"
 import { Grid, Box } from '@mui/material'
 import { styled } from '@mui/material/styles';
-import { red, green, blue } from '@mui/material/colors';
 
 import { Outlet } from 'react-router-dom'
 
 export const Root = () => {
     const Styles = styled('div')(({ theme }) => ({
-        padding: theme.spacing(1),
+        // padding: theme.spacing(1),
         [theme.breakpoints.down('md')]: {
-          backgroundColor: red[500],
+          spacing: 0,
         },
-        [theme.breakpoints.up('md')]: {
-          backgroundColor: blue[500],
-        },
-        [theme.breakpoints.up('lg')]: {
-          backgroundColor: green[500],
-        },
+        // [theme.breakpoints.up('sm')]: {
+        //   minHeight: 800,
+        // },
+        // [theme.breakpoints.up('lg')]: {
+        //   backgroundColor: 'green',
+        // },
       }));
 
-    const sx = { position: 'absolute', minHeight: 600, top: 0, left: 0, right: 0, bottom: 0, srollBehavior: 'sticky' }
+    const sx = { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }
     return (
         <Styles> 
             <Grid container flexWrap='wrap' sx={sx} spacing={2}>

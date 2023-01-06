@@ -7,6 +7,7 @@ aside {
 
   
     width: 5rem;
+    /* height = aside's height - nav's height */
     height: calc(100% - 10rem);
     z-index: 100;
     background-color: #27282c;
@@ -24,16 +25,19 @@ aside {
     justify-content: space-evenly;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1281px) {
+    aside {
+        width: 4rem;
+        padding: 2rem;
+        height: calc(100% - 8rem);
+
+    }
     .header {
         font-size: 1.8rem;
     }
 }
-@media only screen and (max-height: 500px) {
-    .header {
-        font-size: 1.8rem;
-    }
-}
+
+
 
 
 .icon {

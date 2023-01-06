@@ -4,7 +4,9 @@ nav {
   /* position: relative;
   left: 0; */
   background-color: #27282c;
+
 }
+
 .active {
   padding: 1rem;
   z-index: 100;
@@ -23,6 +25,16 @@ nav {
 .active:hover::after {
   transition: .2s ease-in;
   width: 54px;
+}
+
+.nav-buttons-container {
+  flex-shrink: 2;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  position: relative;
+  bottom: 40px;
+  left: 10px;
 }
 .nav-button {
   padding: 1rem;
@@ -47,8 +59,8 @@ nav {
 
 .subheader {
   position: relative;
-  top: 40px;
-  right: 80px;
+  top: 10px;
+  right: 100px;
 }
  
  #menuToggle
@@ -153,7 +165,7 @@ nav {
   */
  #menuToggle input:checked ~ span:nth-last-child(2)
  {
-   transform: rotate(-45deg) translate(0, -1px);
+   transform: rotate(-45deg) translate(0, -1px) ;
  }
  
  /*
@@ -193,3 +205,24 @@ nav {
  {
    transform: none;
  }
+
+ @media only screen and (max-width: 1281px) {
+  nav {
+      height: 8rem;
+      font-size: 0.8rem;
+  }
+  #menuToggle span {
+    bottom: 30px;
+    right: 30px;
+  }
+  #menuToggle input{
+    top: -36px;
+    left: -36px
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+      font-size: 0.6rem;
+  }
+}

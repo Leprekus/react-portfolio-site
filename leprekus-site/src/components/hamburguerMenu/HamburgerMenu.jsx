@@ -26,7 +26,7 @@ export const HamburgerMenu = () =>{
         </ul>
         <h2 className='subheader'>Front End Engineer</h2>
       </div>
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
+      <div className='nav-buttons-container'>
         <NavLink to='/' className={({isActive}) => isActive ? 'active': 'nav-button'}>ABOUT ME</NavLink>
         <NavLink to='/projects' className={({isActive}) => isActive ? 'active': 'nav-button'}>PROJECTS</NavLink>
         <NavLink to='/contact-me' className={({isActive}) => isActive ? 'active': 'nav-button'}>CONTACT ME</NavLink>
