@@ -69,3 +69,8 @@ a > img:hover {
   transform: scale(1.02);
 }
 
+@media only screen and (max-width: 900px) {
+  .MuiGrid-root {
+    overflow-x: hidden;
+  }
+}

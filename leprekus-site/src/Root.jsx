@@ -10,6 +10,7 @@ export const Root = () => {
         // padding: theme.spacing(1),
         [theme.breakpoints.down('md')]: {
           spacing: 0,
+          backgroundColor: 'green'
         },
         // [theme.breakpoints.up('sm')]: {
         //   minHeight: 800,

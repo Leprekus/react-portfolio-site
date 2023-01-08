@@ -32,9 +32,6 @@ export const Page = ({ title, text, contact }) => {
                     </a> }
                 </Grid>
                 <Grid container item alignItems='flex-end' width='100%' flexWrap='no-wrap'>
-                    {/* <span style={{backgroundColor: 'red', minHeight: 250, width: '33.33%'}}></span>
-                    <span style={{backgroundColor: 'blue', minHeight: 250, width: '33.33%'}}></span>
-                    <span style={{backgroundColor: 'green', minHeight: 250, width: '33.33%'}}></span> */}
                     <Carousel>
                         <CarouselItem>Item 1</CarouselItem>
                         <CarouselItem>Item 2</CarouselItem>
