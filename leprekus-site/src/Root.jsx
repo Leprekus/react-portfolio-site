@@ -3,6 +3,7 @@ import { Grid, Box } from '@mui/material'
 import { styled } from '@mui/material/styles';
 
 import { Outlet } from 'react-router-dom'
+import { Projects } from "./pages/Projects";
 
 export const Root = () => {
     const Styles = styled('div')(({ theme }) => ({

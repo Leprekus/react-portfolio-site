@@ -18,7 +18,7 @@ nav {
   margin: auto;
   height:4px;
   width: 40px;
-  background-color: #FFF;
+  background-color: #707072;
   border-radius: 8px;
   position: relative;
 }
@@ -49,7 +49,7 @@ nav {
   margin: auto;
   height:4px;
   width: 0;
-  background-color: #FFF;
+  background-color: #49494b;
   border-radius: 8px;
 }
 .nav-button:hover::after {
@@ -79,14 +79,14 @@ nav {
  #menuToggle a
  {
    text-decoration: none;
-   color: #232323;
+   color: #6169f6;
    
    transition: color 0.3s ease;
  }
  
  #menuToggle a:hover
  {
-   color: tomato;
+   color: rgb(184, 184, 184);
  }
  
  
@@ -102,7 +102,7 @@ nav {
    cursor: pointer;
    
    opacity: 0; /* hide this */
-   z-index: 2; /* and place it over the hamburger */
+   z-index: 200; /* and place it over the hamburger */
    
    -webkit-touch-callout: none;
  }
@@ -121,7 +121,7 @@ nav {
    background: #cdcdcd;
    border-radius: 3px;
    
-   z-index: 1;
+   z-index: 100;
    
    transform-origin: 4px 0px;
    
@@ -144,17 +144,17 @@ nav {
   * Transform all the slices of hamburger
   * into a crossmark.
   */
- #menuToggle input:checked ~ span
+ #menuToggle input:checked ~ span:nth-child(2)
  {
    opacity: 1;
-   transform: rotate(45deg) translate(-2px, -1px);
-   background: #232323;
+   transform: rotate(45deg) translate(2px, -2px);
+   background: #8c8c8c;
  }
  
  /*
   * But let's hide the middle one.
   */
- #menuToggle input:checked ~ span:nth-last-child(3)
+ #menuToggle input:checked ~ span:nth-child(3)
  {
    opacity: 0;
    transform: rotate(0deg) scale(0.2, 0.2);
@@ -163,9 +163,11 @@ nav {
  /*
   * Ohyeah and the last one should go the other direction
   */
- #menuToggle input:checked ~ span:nth-last-child(2)
+ #menuToggle input:checked ~ span:nth-child(4)
  {
-   transform: rotate(-45deg) translate(0, -1px) ;
+   transform: rotate(-45deg) translate(-1px, -1px);
+   background: #232323;
+
  }
  
  /*
@@ -175,12 +177,12 @@ nav {
  #menu
  {
    position: absolute;
-   width: 300px;
+   width: 200px;
    margin: -100px 0 0 -50px;
+   left: 60px;
    padding: 50px;
    padding-top: 125px;
-   
-   background: red;
+   background: #27282c;
    list-style-type: none;
 
    -webkit-font-smoothing: antialiased;
@@ -190,7 +192,9 @@ nav {
    transform: translate(-100%, 0);
    
    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
- }
+
+   z-index: 99;
+  }
  
  #menu li
  {

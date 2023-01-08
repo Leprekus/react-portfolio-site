@@ -1,4 +1,5 @@
 import { Grid } from '@mui/material'
+import { Link } from 'react-router-dom'
 import Carousel, { CarouselItem } from './Carousel/Carousel'
 import { ContactForm } from './ContactForm/ContactForm'
 export const Page = ({ title, text, contact }) => {
@@ -18,17 +19,19 @@ export const Page = ({ title, text, contact }) => {
     }
     return (
         <section style={style} className='tesoku'>
-            <Grid container height={'100%'} flexDirection='column' justifyContent='space-between'>
+            <Grid container height={'100%'} flexDirection='column' justifyContent='center' flexWrap='nowrap'>
                 <Grid container item justifyContent='center' height='66.66%' sx={{ padding: '10rem'}} >
 
                     <h1>{ title }</h1>
                     <div style={{ float:'left'}}>
-                        <p>{ text }</p>
+                        <p style={{ margin: '1rem 0'}}>{ text }</p>
                     </div>
-                    <p style={{ position: 'relative', top: 100}}><strong>See more</strong></p>
-                    { contact && <ContactForm/> }
+                    <Link href='#projects'><strong>See more</strong></Link>
+                    { contact && <a href="mailto:raulrodriguez@leprekus.dev">
+                        <h3>RaulRodriguez@leprekus.dev</h3>
+                    </a> }
                 </Grid>
-                <Grid container item alignItems='flex-end' width='100%'>
+                <Grid container item alignItems='flex-end' width='100%' flexWrap='no-wrap'>
                     {/* <span style={{backgroundColor: 'red', minHeight: 250, width: '33.33%'}}></span>
                     <span style={{backgroundColor: 'blue', minHeight: 250, width: '33.33%'}}></span>
                     <span style={{backgroundColor: 'green', minHeight: 250, width: '33.33%'}}></span> */}

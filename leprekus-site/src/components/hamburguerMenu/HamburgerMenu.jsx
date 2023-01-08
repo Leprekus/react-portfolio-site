@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Divider } from '@mui/material'
 import { NavLink, Link } from 'react-router-dom'
 import { Credits } from '../../pages/Credits'
 import { NavBar } from '../Navbar/Navbar'
@@ -20,9 +21,11 @@ export const HamburgerMenu = () =>{
         
         <ul id="menu">
           <Link to="/"><li>Home</li></Link>
+          <Divider sx={{ backgroundColor: '#464646' }} variant='middle'/>
           <a href="https://github.com/Leprekus" target='_blank'><li>Github</li></a>
+          <Divider sx={{ backgroundColor: '#464646' }} variant='middle'/>
           <Link><li>Credits</li></Link>
-          <Link href="https://erikterwan.com/" target="_blank"><li>Show me more</li></Link>
+          <Divider sx={{ backgroundColor: '#464646' }} variant='middle'/>
         </ul>
         <h2 className='subheader'>Front End Engineer</h2>
       </div>
