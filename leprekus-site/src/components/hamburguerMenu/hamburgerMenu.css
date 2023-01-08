@@ -61,6 +61,7 @@ nav {
   position: relative;
   top: 10px;
   right: 100px;
+  color: #60636d;
 }
  
  #menuToggle
@@ -166,7 +167,7 @@ nav {
  #menuToggle input:checked ~ span:nth-child(4)
  {
    transform: rotate(-45deg) translate(-1px, -1px);
-   background: #232323;
+   background: #8c8c8c;
 
  }
  

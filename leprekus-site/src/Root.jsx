@@ -4,6 +4,7 @@ import { styled } from '@mui/material/styles';
 
 import { Outlet } from 'react-router-dom'
 import { Projects } from "./pages/Projects";
+import { SeeMore } from "./pages/SeeMore";
 
 export const Root = () => {
     const Styles = styled('div')(({ theme }) => ({
@@ -30,6 +31,7 @@ export const Root = () => {
                 <Grid item container md={6} minHeight='100%'>
                     <Outlet/>
                 </Grid>
+                <SeeMore/>
             </Grid>
         </Styles>
     )

@@ -17,6 +17,7 @@ aside {
 
 .header {
     transform: rotate(-90deg);
+    color: #60636d;
 }
 .title-container {
     display: flex;
