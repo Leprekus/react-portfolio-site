@@ -2,7 +2,7 @@ import { Grid } from '@mui/material'
 import { Link } from 'react-router-dom'
 import Carousel, { CarouselItem } from './Carousel/Carousel'
 import { ContactForm } from './ContactForm/ContactForm'
-export const Page = ({ title, text, contact }) => {
+export const Page = ({ title, text, contact, items, displayItems, caption }) => {
     const style = {
         backgroundColor: '#FFF',
         width: '100%',
@@ -32,13 +32,12 @@ export const Page = ({ title, text, contact }) => {
                     </a> }
                 </Grid>
                 <Grid container item alignItems='flex-end' width='100%' flexWrap='no-wrap'>
-                    <Carousel>
-                        <CarouselItem>Item 1</CarouselItem>
-                        <CarouselItem>Item 2</CarouselItem>
-                        <CarouselItem>Item 3</CarouselItem>
-                        <CarouselItem>Item 1</CarouselItem>
-                        <CarouselItem>Item 2</CarouselItem>
-                        <CarouselItem>Item 3</CarouselItem>
+                    <Carousel displayItems={displayItems} caption={caption}>
+                        {items.map((item, index) => 
+                        <CarouselItem key={index}>
+                            { item }
+                        </CarouselItem>
+                        )}
                     </Carousel>
                 </Grid>
             </Grid>

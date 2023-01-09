@@ -1,3 +1,4 @@
+import { display } from '@mui/system'
 import React, { useState, useEffect } from 'react'
 
 import './Carousel.css'
@@ -12,26 +13,31 @@ export const CarouselItem = ({ children, width }) => {
     )
 }
 
-const Carousel = ({ children, innerWidth=100, translate=100 }) => {
+const Carousel = ({ children, displayItems, translate=100, caption }) => {
     const [activeIndex, setActiveIndex] = useState(0)
+    let innerWidth = 100
+    let showNav = true
     const updateIndex = (newIndex) => {
         if(newIndex < 0) {
-            newIndex =  React.Children.count(children) - 1; 
+            newIndex = displayItems ?  
+            displayItems  - 2 : 
+            React.Children.count(children) - 1; 
+        } else if (newIndex >= displayItems - 1) {
+            newIndex = 0;
         } else if (newIndex >= children.length) {
             newIndex = 0;
         }
         setActiveIndex(newIndex)
     }
-    // useEffect(()=>{
-    //     const interval = setInterval(() => {
-    //         updateIndex(activeIndex + 1)
-    //     }, 5000)
-    //     return () => { if(interval) clearInterval(interval) }
-    // })
+    if(displayItems) {
+        innerWidth = innerWidth/displayItems
+        showNav = false
+    }
     return (
         <div className='carousel' style={{ width: '90%', margin: 'auto' }}>
             <button className='button-previous' onClick={() => updateIndex(activeIndex - 1)}></button>
             <button className='button-next' onClick={() => updateIndex(activeIndex + 1)}></button>
+            <h3>{ caption }</h3>
             <div className="inner" style={{ transform: `translateX(-${activeIndex * translate}%)`, width: '100%' }}>
                 {React.Children.map(children, (child, index) => {
                     //100width => displays 1 item
@@ -39,7 +45,7 @@ const Carousel = ({ children, innerWidth=100, translate=100 }) => {
                     return React.cloneElement(child, { width: `${innerWidth}%` })
                 })}
             </div>
-            {React.Children.map(children, (child, index) => {
+            {showNav && React.Children.map(children, (child, index) => {
                 return (
                     <button 
                     style={{ position: 'relative', bottom: 25, margin: ' 0 0.1rem'}}

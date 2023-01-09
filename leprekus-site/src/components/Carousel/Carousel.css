@@ -15,8 +15,8 @@ translates to move items around
     align-items: center;
     justify-content: center;
     height: 200px;
-    background-color: green;
-    color: #FFF;
+    background-color: transparent;
+    color: #000000;
 }
 
 .active-item {
