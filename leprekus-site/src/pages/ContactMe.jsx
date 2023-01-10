@@ -2,7 +2,7 @@ import { ContactForm } from "../components/ContactForm/ContactForm"
 import { Page } from "../components/Page"
 
 export const ContactMe = () => {
-    const items = [1,2,3,4]
+    const items = []
     return (
         <Page
         title="Let's get in Touch"

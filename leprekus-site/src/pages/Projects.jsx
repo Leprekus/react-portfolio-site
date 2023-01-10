@@ -1,7 +1,7 @@
 import { Page } from "../components/Page"
 
 export const Projects = () => {
-    const items = [1,2,3,4]
+    const items = [<div style={{ background: 'red', width: '100%', height: '100%' }}/>]
 
     return (
         <Page

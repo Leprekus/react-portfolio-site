@@ -5,6 +5,7 @@ import { styled } from '@mui/material/styles';
 import { Outlet } from 'react-router-dom'
 import { Projects } from "./pages/Projects";
 import { SeeMore } from "./pages/SeeMore";
+import profilePicture from './assets/profile-pic.jpg'
 
 export const Root = () => {
     const Styles = styled('div')(({ theme }) => ({
@@ -25,13 +26,13 @@ export const Root = () => {
     return (
         <Styles> 
             <Grid container flexWrap='wrap' sx={sx} spacing={2}>
-                <Box component={Grid} item container md={6} boxShadow={3} minHeight='100%'>
+                <Box component={Grid} item container md={6} boxShadow={3} minHeight='100%' sx={{ backgroundImage: `url(${profilePicture})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
                     <NavBar/>
                 </Box>
                 <Grid item container md={6} minHeight='100%'>
                     <Outlet/>
                 </Grid>
-                <SeeMore/>
+                {/* d */}
             </Grid>
         </Styles>
     )

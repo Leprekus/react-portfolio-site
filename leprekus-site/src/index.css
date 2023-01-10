@@ -41,6 +41,15 @@ button {
   font-family: inherit;
   cursor: pointer;
   transition: border-color 0.25s;
+  
+  transition: 0.2s ease-out;
+  box-shadow: 1px 1px 5.8px 1px rgba(0, 0, 0, 0.0);
+
+}
+
+button:hover {
+  transition: 0.2s ease-in;
+  box-shadow: 1px 1px 5.8px 1px rgba(0, 0, 0, 0.3);
 }
 
 @media (prefers-color-scheme: light) {
