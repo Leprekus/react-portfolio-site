@@ -34,7 +34,7 @@ h1 {
   line-height: 1.1;
 }
 
-button {
+button, .project {
   border: 1px solid transparent;
   font-size: 1em;
   font-weight: 500;
@@ -46,8 +46,11 @@ button {
   box-shadow: 1px 1px 5.8px 1px rgba(0, 0, 0, 0.0);
 
 }
+.project {
+  border-radius: 7px;
+}
 
-button:hover {
+button:hover, .project:hover {
   transition: 0.2s ease-in;
   box-shadow: 1px 1px 5.8px 1px rgba(0, 0, 0, 0.3);
 }

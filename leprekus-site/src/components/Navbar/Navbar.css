@@ -21,6 +21,7 @@ aside {
 }
 .title-container {
     display: flex;
+    gap: 50px;
     height: 100%;
     flex-direction: column;
     justify-content: space-evenly;

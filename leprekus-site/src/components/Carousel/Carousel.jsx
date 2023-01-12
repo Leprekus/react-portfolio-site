@@ -5,10 +5,11 @@ import './Carousel.css'
 
 //carouselItem receives width from Carousel
 //to know how many children to render
-export const CarouselItem = ({ children, width }) => {
+export const CarouselItem = ({ children, caption, width }) => {
     return (
-        <div className='item' style={{ width: width }}>
+        <div className='item' style={{ width: width, display: 'flex', flexDirection: 'column' }}>
             { children }
+            <p style={{ color: '#5e5e5e' }}>{ caption }</p>
         </div>
     )
 }
@@ -37,12 +38,11 @@ const Carousel = ({ children, displayItems, translate=100, caption }) => {
         <div className='carousel' style={{ width: '90%', margin: 'auto' }}>
             <button className='button-previous' onClick={() => updateIndex(activeIndex - 1)}></button>
             <button className='button-next' onClick={() => updateIndex(activeIndex + 1)}></button>
-            <h3>{ caption }</h3>
             <div className="inner" style={{ transform: `translateX(-${activeIndex * translate}%)`, width: '100%' }}>
                 {React.Children.map(children, (child, index) => {
                     //100width => displays 1 item
                     //50 widtgh => displays 2 items and so on
-                    return React.cloneElement(child, { width: `${innerWidth}%` })
+                    return React.cloneElement(child, { width: `${innerWidth}%`, caption })
                 })}
             </div>
             {showNav && React.Children.map(children, (child, index) => {
