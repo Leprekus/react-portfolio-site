@@ -30,6 +30,17 @@ export const Page = ({ title, text, contact, items, displayItems, caption }) => 
                     { contact && <a href="mailto:raulrodriguez@leprekus.dev">
                         <h3>RaulRodriguez@leprekus.dev</h3>
                     </a> }
+                    <form name="contact" netlify>
+                        <p>
+                            <label>Name <input type="text" name="name" /></label>
+                        </p>
+                        <p>
+                            <label>Email <input type="email" name="email" /></label>
+                        </p>
+                        <p>
+                            <button type="submit">Send</button>
+                        </p>
+                    </form>
                 </Grid>
                 <Grid container item alignItems='flex-end' width='100%' flexWrap='no-wrap'>
                     <Carousel displayItems={displayItems} caption={caption}>
