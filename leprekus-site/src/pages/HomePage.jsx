@@ -12,22 +12,20 @@ export const HomePage = () => {
     useEffect(()=> {
         const interval = setTimeout(() => {
             setProficiencyLevel(values)
-            console.log('done')
         }, 1000)
         return () => clearInterval(interval)
     }, [])
-    const images = [reactIcon, reduxIcon, jsIcon, cypressIcon, pythonIcon, '']
+    const images = [reactIcon, reduxIcon, jsIcon, cypressIcon, pythonIcon]
     const technologies = ['React', 'Redux', 'JavaScript', 'Cypress', 'Python']
     const items = images.map((src, i) => 
     <div 
     style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%', width: '100%' }}
     key={i}
     >
-            <h4>Proficiency</h4>
             <Tooltip title={`${technologies[i]}`} arrow placement='top'>
                 <img src={src} style={{ width: 'auto', height: '25%', margin: '0.7rem' }}/>
             </Tooltip>
-            <LinearProgress sx={{ width: 100}} variant='determinate' value={proficiencyLevel[i]}/>
+            <LinearProgress sx={{ width: 100}} variant='determinate' value={proficiencyLevel[i]} />
     </div>
    
     )
