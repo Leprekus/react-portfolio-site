@@ -32,7 +32,7 @@ export const Root = () => {
                 <Grid item container md={6} minHeight='100%'>
                     <Outlet/>
                 </Grid>
-                {/* d */}
+               {/* <SeeMore/> */}
             </Grid>
         </Styles>
     )

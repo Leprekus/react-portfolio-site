@@ -32,7 +32,7 @@ export const HomePage = () => {
     return (
         <Page
         title='Turning Ideas Into Reality'
-        text='Self taught. Love turning crazy ideas into reality. I love fitnesss and anime.'
+        text='Self taught. Love working on challenging problems and thinking outside the box.'
         items={items}
         displayItems={3}
         caption='Technologies'
