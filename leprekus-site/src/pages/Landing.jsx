@@ -1,7 +1,7 @@
 
 export default function Landing () {
     return (
-        <>
+        <section className="bg-blue-100">
             <div>
                 <h5>Raul<br/>Rodriguez</h5> <button>Work with me</button>
             </div>
@@ -15,6 +15,6 @@ export default function Landing () {
                 <span>linkedin</span>
                 <span>something else</span>   
             </div>
-        </>
+        </section>
     )
 }

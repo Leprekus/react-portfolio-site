@@ -1,4 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom';
+import About from './pages/About';
 import Landing from './pages/Landing';
 import Root from './Root';
 
@@ -9,8 +10,12 @@ const router = createBrowserRouter([
     children: [
         {
             path: '/',
-            element: <div>mememeeme</div>
-        }
+            element: <Landing/>
+        },
+        {
+            path: '/about',
+            element: <About/>
+        },
     ]
   },
 ]);
