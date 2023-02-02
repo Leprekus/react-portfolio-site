@@ -7,11 +7,6 @@ export default function About () {
             <div>Experience1 card format</div>
             <div>Experience2 card format</div>
             <div>Experience3 card format</div>
-            <ul>
-                <li>techonologies & brief description</li>
-                <li>techonologies & brief description</li>
-                <li>techonologies & brief description</li>
-            </ul>
         </section>
     )
 }
