@@ -9,9 +9,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(0, 0, 0, 0.87);
-  /* background-color: #242424; */
-  background-color: #ffffff;
+  color: #fff;
+  background-color: #20232f;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,8 +18,32 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --button-shadow:   box-shadow: 1px 1px 5.8px 1px rgba(0, 0, 0, 0.3);;
+  --button-shadow:   box-shadow: 1px 1px 5.8px 1px rgba(0, 0, 0, 0.3);
 }
+h1 {
+  font-size: 40px;
+  font-weight:800;
+}
+h2 {
+  font-size: 32px;
+  font-weight:700;
+}
+h3 {
+  font-size: 26px;
+  font-weight:600;
+}
+h4 {
+  font-size: 22px;
+  font-weight:400;
+}
+h5 {
+  font-size: 20px;
+  font-weight:300;
+}
+h6 {
+  font-size: 18px;
+}
+
 
 * {
   box-sizing: border-box;

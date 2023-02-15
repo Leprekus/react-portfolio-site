@@ -12,12 +12,12 @@ import Contact from './pages/Contact'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <RouterProvider router={router}/> */}
-    <Root/>
+    <RouterProvider router={router}/>
+    {/* <Root/>
     <Landing/>
     <About/>
     <Technologies/>
     <Projects/>
-    <Contact/>
+    <Contact/> */}
   </React.StrictMode>,
 )

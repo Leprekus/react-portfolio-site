@@ -5,6 +5,7 @@ module.exports = {
     "./*.{html,jsx}",
 ],
   theme: {
+    color: {},
     extend: {},
   },
   plugins: [],

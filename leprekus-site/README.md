@@ -1,4 +1,5 @@
 # Portfolio Site 
+Designed using a mobile first approach. 
 ## Navbar
 
 ## Landing
