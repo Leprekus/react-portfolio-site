@@ -1,14 +1,15 @@
 import Card from '../components/Card';
+import Cardholder from '../components/Cardholder';
 import Layout from '../components/Layout';
 
 export default function About() {
   return (
     <Layout>
-      <div>
+      <Cardholder>
           <Card className='m-4'>Experience1 card format</Card>
           <Card className='m-4'>Experience2 card format</Card>
           <Card className='m-4'>Experience3 card format</Card>
-      </div>
+      </Cardholder>
       <div>
           <h2>About Me</h2>
           <h5>
