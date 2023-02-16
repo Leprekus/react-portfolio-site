@@ -51,18 +51,18 @@ function Navbar() {
               <img src={technologies} />
             </NavLink>
           </Tooltip>
-          <Tooltip title='Projects'>
+          <Tooltip title='Portfolio'>
             <NavLink
-              to='/projects'
+              to='/Portfolio'
               className='w-10'
               style={({ isActive }) => (isActive ? active : undefined)}
             >
               <img src={briefcase} />
             </NavLink>
           </Tooltip>
-          <Tooltip title='Contact Me'>
+          <Tooltip title='Contact'>
             <NavLink
-              to='/contact'
+              to='/Contact'
               className='w-10'
               style={({ isActive }) => (isActive ? active : undefined)}
             >
@@ -83,28 +83,28 @@ function Navbar() {
             Home
           </NavLink>
           <NavLink
-            to='/about'
+            to='/About'
             className=''
             style={({ isActive }) => (isActive ? active : undefined)}
           >
             About
           </NavLink>
           <NavLink
-            to='/skills'
+            to='/Skills'
             className=''
             style={({ isActive }) => (isActive ? active : undefined)}
           >
             Skills
           </NavLink>
           <NavLink
-            to='/projects'
+            to='/Portfolio'
             className=''
             style={({ isActive }) => (isActive ? active : undefined)}
           >
             Portfolio
           </NavLink>
           <NavLink
-            to='/contact'
+            to='/Contact'
             className=''
             style={({ isActive }) => (isActive ? active : undefined)}
           >

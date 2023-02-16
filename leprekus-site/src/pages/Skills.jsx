@@ -1,4 +1,4 @@
-export default function Technologies () {
+export default function Skills () {
     return (
         <section>
               <ul>
