@@ -49,7 +49,7 @@ export default function Landing() {
     </div>
     <div id='bg-blob'
     className='w-full flex justify-center items-center
-    md:w-1/2
+    md:w-1/2 
     '
     style={{minWidth: 400}}
     >
