@@ -43,3 +43,7 @@ Projects and About use contact card component.
  Data Management Icon - [Freepik](https://www.flaticon.com/authors/freepik)
  Briefcase Icon - [Dragon Icons](https://www.flaticon.com/authors/dragon-icons)
  Home Icon - [Mattbadal](https://www.flaticon.com/authors/mattbadal)
+
+ Github Icon - [Pixel perfect](https://www.flaticon.com/authors/pixel-perfect)
+ Instagram Icon - [Hight Quality Icons](https://www.flaticon.com/authors/hight-quality-icons)
+ Youtube Icon - [Freepik](https://www.flaticon.com/authors/freepik)

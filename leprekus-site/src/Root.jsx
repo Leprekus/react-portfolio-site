@@ -6,7 +6,7 @@ export default function Root() {
   return (
     <main className='min-h-full max-w-7xl mx-auto'>
       <Navbar/>
-      <div className='md:relative top-20 p-5 m-auto'>
+      <div className='relative bottom-20 md:top-20 p-5 m-auto'>
         <Outlet />
         <p className='cal'></p>
       </div>
