@@ -2,11 +2,13 @@ import React from 'react';
 function ListItem({img, title, description}) {
   return (
     <div
-      className='w-72 h-16 p-4 rounded-md 
-      lg:flex-col lg:w-32 lg:h-40 lg:items-center lg:text-center
-    bg-slate-200
+      className='w-72 h-16 p-4 rounded-md bg-slate-200
       flex gap-4
-    '
+      lg:flex-col lg:w-32 lg:h-40 lg:items-center lg:text-center
+
+      hover:-translate-y-1 hover:ease-in hover:delay-75 hover:drop-shadow
+      transition-all 
+      '
     >
       <div className='w-9 h-9 rounded-md p-2
        bg-slate-300'>
