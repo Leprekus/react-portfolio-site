@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import Cardheader from './Cardheader';
 
-function Card({ children, img, header }) {
+function Card({ children, img, header, bg }) {
   const divRef = useRef(null)
   const handleExpand = () => {
     divRef.current.scrollTo(0,0)
@@ -21,6 +21,7 @@ function Card({ children, img, header }) {
     <div
       className='w-60 h-60 p-4 relative
     bg-gradient-to-bl from-pink-400 to-purple-300 rounded-md'
+    style={{backgroundImage: bg}}
     >
       <div
         id='custom-scrollbar'
