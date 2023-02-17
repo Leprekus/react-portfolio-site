@@ -14,7 +14,7 @@ export default function About() {
           <Card header='Codecademy' img={codecademy}>Experience3 card format</Card>
       </Cardholder>
       <div>
-          <h2>About Me</h2>
+          <h2>About <span className='text-pink-400'>Me</span></h2>
           <h5>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat nulla,
             ex laboriosam, repudiandae labore voluptatibus numquam sit ipsum
