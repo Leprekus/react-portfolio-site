@@ -10,8 +10,8 @@ function ListItem({img, title, description}) {
       transition-all 
       '
     >
-      <div className='w-9 h-9 rounded-md p-2
-       bg-slate-300'>
+      <div className='w-9 h-9 rounded-md p-2 lg:w-12 lg:h-12
+       bg-slate-300 shadow-inner'>
         <img src={img} alt="skill" />
       </div>
       <div>
