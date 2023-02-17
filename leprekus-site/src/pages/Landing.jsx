@@ -1,4 +1,3 @@
-import Blob from '../components/Blob';
 import memoji from '../assets/memoji.png';
 import github from '../assets/github.png';
 import instagram from '../assets/instagram.png';

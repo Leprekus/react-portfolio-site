@@ -1,14 +1,14 @@
-import Card from '../components/Card';
-import Cardholder from '../components/Cardholder';
+import Card from '../components/Card/Card';
+import Cardholder from '../components/Card/Cardholder';
 import Layout from '../components/Layout';
 
 export default function About() {
   return (
     <Layout>
       <Cardholder>
-          <Card className='m-4'>Experience1 card format</Card>
-          <Card className='m-4'>Experience2 card format</Card>
-          <Card className='m-4'>Experience3 card format</Card>
+          <Card>Experience1 card format</Card>
+          <Card>Experience2 card format</Card>
+          <Card>Experience3 card format</Card>
       </Cardholder>
       <div>
           <h2>About Me</h2>
