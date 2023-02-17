@@ -2,13 +2,16 @@ import Card from '../components/Card/Card';
 import Cardholder from '../components/Card/Cardholder';
 import Layout from '../components/Layout';
 
+import codecademy from '../assets/codecademy.png'
+import uniformCentral from '../assets/uniform_central.png'
+import aroc from '../assets/aroc.png'
 export default function About() {
   return (
     <Layout>
-      <Cardholder>
-          <Card>Experience1 card format</Card>
-          <Card>Experience2 card format</Card>
-          <Card>Experience3 card format</Card>
+      <Cardholder title='My Experience'>
+          <Card header='Uniform Central' img={uniformCentral}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eligendi ex enim voluptatem repellat vel expedita soluta? Ab, maxime accusamus numquam sunt quas, eligendi soluta rem a, harum fugiat deleniti.</Card>
+          <Card header='Aroc Medical Clinic' img={aroc}>Experience2 card format</Card>
+          <Card header='Codecademy' img={codecademy}>Experience3 card format</Card>
       </Cardholder>
       <div>
           <h2>About Me</h2>

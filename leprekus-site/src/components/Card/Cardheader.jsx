@@ -1,11 +1,11 @@
 import React from 'react'
-
-function Cardheader({title='Lorem ipsum Dolor',}) {
+import codecademy from '../../assets/codecademy.png'
+function Cardheader({img, header='Lorem ipsum Dolor',}) {
   return (
-    <div className=' flex items-center justify-between
-    w-full p-3 absolute top-0'>
-        <div className='h-10 w-10 bg-green-400 rounded-full'></div>
-        <p className='text-violet-400 text-xs'>{ title }</p>
+    <div className='flex items-center gap-4
+    w-56 pt-3 pl-1 absolute top-0'>
+        <div className='h-16 w-16 rounded-full bg-zinc-200' style={{ backgroundImage: `url(${img})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat',backgroundPosition: 'center' }}></div>
+        <p className='text-sm'>{ header }</p>
     </div>
   )
 }
