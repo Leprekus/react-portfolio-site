@@ -34,7 +34,7 @@ export default function Skills () {
               <li>
                   <p>lorem</p>
               </li>
-              <hr className='h-px my-4 bg-slate-600 border-0'/>
+                <hr className='h-px my-4 bg-slate-600 border-0'/>
               <li>
                   <p>lorem</p>
               </li>
