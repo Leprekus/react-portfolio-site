@@ -21,7 +21,7 @@ function Card({ children, img, header, bg }) {
     <div
       className='w-60 h-60 p-4 relative
     bg-gradient-to-bl from-pink-400 to-purple-300 rounded-md'
-    style={{backgroundImage: bg}}
+    style={bg ? {backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'} : undefined}
     >
       <div
         id='custom-scrollbar'
