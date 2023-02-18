@@ -15,10 +15,10 @@ function Contact() {
         <hr className='h-px my-4 bg-slate-600 border-0 w-3/4'/>
         <input className='w-1/2 bg-[#20232f] focus:outline-none' type='text' name='message' placeholder="Message" />
         <hr className='h-px my-4 bg-slate-600 border-0 w-3/4'/>
-        <input className='w-1/2 focus:outline-none cursor-pointer
+        <button className='w-1/2 focus:outline-none cursor-pointer
         px-4 py-2 bg-pink-400 rounded-full hover:bg-pink-600
         hover:transition-all transition-all
-        ' type="submit" placeholder='Send'/>
+        ' type="submit">Send</button>
       </form>
     </section>
   )
