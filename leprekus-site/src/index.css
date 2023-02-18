@@ -83,3 +83,21 @@ h1,h2,h3,h4,h5,h6 {
 .scale-bg:hover {
   transform: scale(1.1);
 }
+
+/* Slide in */
+.link::after {
+  width: 0px;
+  opacity: 1;
+  height: 1px;
+  display: inline-block;
+  position: absolute;
+  transform: translate(-45px, 30px);
+  background-color: #f472b6;
+  content: ' ';
+  transition: all ease-in 0.2s;
+}
+.link:hover::after {
+  width: 45px;
+  transition: all ease-in 0.2s;
+  opacity: 1;
+}

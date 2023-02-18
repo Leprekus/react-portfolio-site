@@ -7,6 +7,7 @@ import uniformCentral from '../assets/uniform_central.png'
 import aroc from '../assets/aroc.png'
 import uniformCentralStoreFront from '../assets/uniform-central.png'
 import clinicaMedica from '../assets/clinica-medica.png'
+import { Link } from 'react-router-dom';
 export default function About() {
   const headers = ['Uniform Central', 'Aroc Medical Clinic', 'Codecademy']
   const bgs = [uniformCentralStoreFront, clinicaMedica, uniformCentralStoreFront/*add codecademy bg*/]
@@ -24,19 +25,23 @@ export default function About() {
             link={links[i]}>{ text[i] }</Card>)}
       </Cardholder>
       <div>
-          <h2>About <span className='text-pink-400'>Me</span></h2>
+          <h2>About <span className='text-pink-400'>Me.</span></h2>
           <h5>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat nulla,
-            ex laboriosam, repudiandae labore voluptatibus numquam sit ipsum
-            incidunt amet harum vero nostrum ut suscipit sunt quam minus aut
-            repellat.
-          </h5>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat nulla,
-            ex laboriosam, repudiandae labore voluptatibus numquam sit ipsum
-            incidunt amet harum vero nostrum ut suscipit sunt quam minus aut
-            repellat.
+            Check the <Link to="/skills" class="link text-pink-400">Skills</Link> section for a TLDR;</h5>
+          <p className='leading-8'>
+            Proactiveness: I constantly look for ways to improve processes and streamline workflows. In order to ensure that projects are completed efficiently and effectively. 
+            <br />
+            Communication: I have excellent communication skills, both written and verbal. I am able to clearly and effectively convey ideas and collaborate with team members to achieve shared goals.
+            <br />
+            Problem-solving: I have great problem-solving skills and have the ability to analyze complex issues and develop effective solutions. 
+            <br />
+            Goal-oriented: I am highly goal-oriented individual whose focused on delivering results. 
+            <br />
+            Adaptability: I am highly adaptable and able to work in a fast-paced, ever-changing environment. I am able to quickly learn new skills and technologies and integrate them into my work.
+            <br />
+            Overall, I believe that my soft skills complement my technical skills as a frontend developer and make me a valuable asset to our team.
           </p>
+
       </div>
     </Layout>
   );
