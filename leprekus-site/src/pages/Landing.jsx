@@ -5,6 +5,7 @@ import youtube from '../assets/youtube.png';
 import { Link } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
 import Layout from '../components/Layout';
+import cv from '../assets/cv.txt'
 export default function Landing() {  
   return (
 <Layout>
@@ -43,7 +44,7 @@ export default function Landing() {
       </div>
       <div className='flex gap-4'>
         <Link to='/contact' className='px-4 py-2 bg-pink-400 rounded-full'>Contact</Link>
-        <button className='px-4 py-2 border-pink-400 border-2 rounded-full'>Download CV</button>
+        <a href={cv} download className='px-4 py-2 border-pink-400 border-2 rounded-full'>Download CV</a>
       </div>
     </div>
     <div id='bg-blob'
