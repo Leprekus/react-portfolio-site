@@ -21,7 +21,7 @@ function Contact() {
         <input
           type='hidden'
           name='_redirect'
-          value='https://leprekus.dev/Contact'
+          value='https://leprekus.dev'
         />
         <input
           className='w-1/2 bg-[#20232f] focus:outline-none'
