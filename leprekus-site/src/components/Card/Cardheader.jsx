@@ -1,7 +1,7 @@
 import { display } from '@mui/system'
 import React from 'react'
 import codecademy from '../../assets/codecademy.png'
-function Cardheader({img, header='Lorem ipsum Dolor',}) {
+function Cardheader({img, header='Lorem ipsum Dolor'}) {
   return (
     <div className='flex items-center gap-4
     w-56 pt-3 pl-1 absolute top-0'>

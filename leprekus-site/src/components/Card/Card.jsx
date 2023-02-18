@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import Cardheader from './Cardheader';
 
-function Card({ children, img, header, bg }) {
+function Card({ children, img, header, bg, link }) {
   const divRef = useRef(null)
   const handleExpand = () => {
     divRef.current.scrollTo(0,0)
@@ -20,9 +20,14 @@ function Card({ children, img, header, bg }) {
     //change width and height
     <div
       className='w-60 h-60 p-4 relative
-    bg-gradient-to-bl from-pink-400 to-purple-300 rounded-md'
-    style={bg ? {backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'} : undefined}
+    bg-gradient-to-bl from-pink-400 to-purple-300 rounded-md overflow-hidden'
     >
+      {link && 
+      <a 
+      href={link} target='_blank' className='transition-all hover:transition-all
+      scale-bg w-full h-full inline-block absolute top-0 left-0'
+      style={{backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}
+      />}
       <div
         id='custom-scrollbar'
         className='w-full absolute left-0 bottom-0 rounded-b-md rounded-tl-3xl rounded-tr-sm
