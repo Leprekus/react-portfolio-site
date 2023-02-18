@@ -23,7 +23,7 @@ function Contact() {
         <button className='w-1/2 focus:outline-none cursor-pointer
         px-4 py-2 bg-pink-400 rounded-full hover:bg-pink-600
         hover:transition-all transition-all
-        ' type="submit">Send</button>
+        ' type="submit">Submit</button>
       </form>
     </section>
   )
