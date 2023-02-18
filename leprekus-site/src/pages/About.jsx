@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom';
 export default function About() {
   const headers = ['Uniform Central', 'Aroc Medical Clinic', 'Codecademy']
   const bgs = [uniformCentralStoreFront, clinicaMedica, uniformCentralStoreFront/*add codecademy bg*/]
+  //prefetch images on site load
   const imgs = [uniformCentral, aroc, codecademy]
   const links = ['https://clinica-medica.leprekus.dev/', 'https://clinica-medica.leprekus.dev/', 'https://clinica-medica.leprekus.dev/']
   const text = ['Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eligendi ex enim voluptatem repellat vel expedita soluta? Ab, maxime accusamus numquam sunt quas, eligendi soluta rem a, harum fugiat deleniti', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eligendi ex enim voluptatem repellat vel expedita soluta? Ab, maxime accusamus numquam sunt quas, eligendi soluta rem a, harum fugiat deleniti', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eligendi ex enim voluptatem repellat vel expedita soluta? Ab, maxime accusamus numquam sunt quas, eligendi soluta rem a, harum fugiat deleniti',]
