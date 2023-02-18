@@ -18,10 +18,10 @@ function Contact() {
         name='contact'
         method='POST'
       >
-        <input
+         <input
           type='hidden'
-          name='_redirect'
-          value='https://leprekus.dev'
+          name='form-name'
+          value='contact'
         />
         <input
           className='w-1/2 bg-[#20232f] focus:outline-none'
