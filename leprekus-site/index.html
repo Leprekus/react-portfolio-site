@@ -6,6 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style> @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap'); </style>  
     <body>
+      <form
+        netflify
+        netlify-honeypot='bot-field'
+        name='contact'
+        method='POST'
+        hidden
+      >
+        <input
+          type='hidden'
+          name='_redirect'
+          value='https://leprekus.dev'
+        />
+        <input
+        
+          type='name'
+          name='name'
+          placeholder='Name'
+        />
+        <hr/>
+        <input
+          
+          type='email'
+          name='email'
+          placeholder='Email'
+        />
+        <hr/>
+        <input
+          type='text'
+          name='message'
+          placeholder='Message'
+        />
+        <hr />
+        <button type='submit'>
+          Submit
+        </button>
+      </form>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
