@@ -1,8 +1,8 @@
 import React from 'react'
 import { Tooltip } from '@mui/material';
 import briefcase from '../assets/navbar-icons/briefcase.png';
-import chat from '../assets/navbar-icons/chat.png';
-import technologies from '../assets/navbar-icons/data-management.png';
+import paperPlane from '../assets/navbar-icons/paper-plane.png';
+import skills from '../assets/navbar-icons/star.png';
 import home from '../assets/navbar-icons/home.png';
 import user from '../assets/navbar-icons/user.png';
 import { NavLink } from 'react-router-dom';
@@ -24,15 +24,6 @@ function Navbar() {
           className='fixed bottom-0 bg-gray-900 left-0 right-0 h-20 z-10
           flex justify-evenly items-center gap-2 md:hidden' 
         >
-          <Tooltip title='Home'>
-            <NavLink
-              to='/'
-              className='w-10'
-              style={({ isActive }) => (isActive ? active : undefined)}
-            >
-              <img src={home} />
-            </NavLink>
-          </Tooltip>
           <Tooltip title='About Me'>
             <NavLink
               to='/about'
@@ -48,7 +39,16 @@ function Navbar() {
               className='w-10'
               style={({ isActive }) => (isActive ? active : undefined)}
             >
-              <img src={technologies} />
+              <img src={skills} />
+            </NavLink>
+          </Tooltip>
+          <Tooltip title='Home'>
+            <NavLink
+              to='/'
+              className='w-10'
+              style={({ isActive }) => (isActive ? active : undefined)}
+            >
+              <img src={home} />
             </NavLink>
           </Tooltip>
           <Tooltip title='Portfolio'>
@@ -66,7 +66,7 @@ function Navbar() {
               className='w-10'
               style={({ isActive }) => (isActive ? active : undefined)}
             >
-              <img src={chat} />
+              <img src={paperPlane} />
             </NavLink>
           </Tooltip>
         </div>
