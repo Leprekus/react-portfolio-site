@@ -6,6 +6,11 @@ function Contact() {
     <section className='flex flex-col text-center
     md:flex-row md:justify-between md:items-start
     '>
+       <input
+    type="hidden"
+    name="_redirect"
+    value="https://leprekus.dev/Contact"
+    />  
       <h1>Contact <span className='text-pink-400'>Me.</span></h1>
       <form className='flex flex-col items-start w-full
       md:w-1/2' netflify name='contact' method='POST'>
