@@ -8,7 +8,7 @@ function Contact() {
     '>
       <h1>Contact <span className='text-pink-400'>Me.</span></h1>
       <form className='flex flex-col items-start w-full
-      md:w-1/2' netflify>
+      md:w-1/2' netflify name='contact' method='POST'>
         <input className='w-1/2 bg-[#20232f] focus:outline-none' type='name' placeholder="Name" />
         <hr className='h-px my-4 bg-slate-600 border-0 w-3/4'/>
         <input className='w-1/2 bg-[#20232f] focus:outline-none' type='email' placeholder="Email" />
