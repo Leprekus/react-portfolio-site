@@ -6,10 +6,13 @@ import skills from '../assets/navbar-icons/star.png';
 import home from '../assets/navbar-icons/home.png';
 import user from '../assets/navbar-icons/user.png';
 import { NavLink } from 'react-router-dom';
+import { DiscreteInterpolant } from 'three';
 
 function Navbar() {
     const active = {
-        color: '#f472b6',
+        filter:'invert(15%) sepia(60%) saturate(376%) hue-rotate(86deg) brightness(118%) contrast(119%)',
+        transition:'ease-in 0.15s',
+
       };
   return (
     <nav
@@ -21,7 +24,8 @@ function Navbar() {
           '
       >
         <div
-          className='fixed bottom-0 bg-gray-900 left-0 right-0 h-20 z-10
+          className='fixed bottom-0 bg-gradient-to-bl from-pink-400 to-purple-500 left-0 right-0 
+          h-20 z-10 rounded-t-3xl
           flex justify-evenly items-center gap-2 md:hidden' 
         >
           <Tooltip title='About Me'>
