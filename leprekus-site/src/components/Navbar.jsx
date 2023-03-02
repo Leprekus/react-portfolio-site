@@ -6,7 +6,7 @@ import skills from '../assets/navbar-icons/star.png';
 import home from '../assets/navbar-icons/home.png';
 import user from '../assets/navbar-icons/user.png';
 import { NavLink } from 'react-router-dom';
-import { DiscreteInterpolant } from 'three';
+
 
 function Navbar() {
     const active = {
