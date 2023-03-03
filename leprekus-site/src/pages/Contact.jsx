@@ -17,7 +17,7 @@ function Contact() {
         netflify
         name='contact'
         method='POST'
-        onSubmit={(e) => e.preventDefault()}
+        action='/contact'
       >
          <input
           type='hidden'
