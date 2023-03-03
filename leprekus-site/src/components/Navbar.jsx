@@ -9,8 +9,14 @@ import { NavLink } from 'react-router-dom';
 
 
 function Navbar() {
-    const active = {
+    const activeMobile = {
         filter:'invert(15%) sepia(60%) saturate(376%) hue-rotate(86deg) brightness(118%) contrast(119%)',
+        transition:'ease-in 0.15s',
+
+      };
+      const activeDesktop = {
+
+        filter:'brightness(0) saturate(100%) invert(64%) sepia(19%) saturate(4041%) hue-rotate(294deg) brightness(103%) contrast(91%)',
         transition:'ease-in 0.15s',
 
       };
@@ -32,7 +38,7 @@ function Navbar() {
             <NavLink
               to='/about'
               className='w-10'
-              style={({ isActive }) => (isActive ? active : undefined)}
+              style={({ isActive }) => (isActive ? activeMobile : undefined)}
             >
               <img src={user} />
             </NavLink>
@@ -41,7 +47,7 @@ function Navbar() {
             <NavLink
               to='/skills'
               className='w-10'
-              style={({ isActive }) => (isActive ? active : undefined)}
+              style={({ isActive }) => (isActive ? activeMobile : undefined)}
             >
               <img src={skills} />
             </NavLink>
@@ -50,7 +56,7 @@ function Navbar() {
             <NavLink
               to='/'
               className='w-10'
-              style={({ isActive }) => (isActive ? active : undefined)}
+              style={({ isActive }) => (isActive ? activeMobile : undefined)}
             >
               <img src={home} />
             </NavLink>
@@ -59,7 +65,7 @@ function Navbar() {
             <NavLink
               to='/Portfolio'
               className='w-10'
-              style={({ isActive }) => (isActive ? active : undefined)}
+              style={({ isActive }) => (isActive ? activeMobile : undefined)}
             >
               <img src={briefcase} />
             </NavLink>
@@ -68,7 +74,7 @@ function Navbar() {
             <NavLink
               to='/Contact'
               className='w-10'
-              style={({ isActive }) => (isActive ? active : undefined)}
+              style={({ isActive }) => (isActive ? activeMobile : undefined)}
             >
               <img src={paperPlane} />
             </NavLink>
@@ -82,35 +88,35 @@ function Navbar() {
           <NavLink
             to='/'
             className=''
-            style={({ isActive }) => (isActive ? active : undefined)}
+            style={({ isActive }) => (isActive ? activeDesktop : undefined)}
           >
             Home
           </NavLink>
           <NavLink
             to='/About'
             className=''
-            style={({ isActive }) => (isActive ? active : undefined)}
+            style={({ isActive }) => (isActive ? activeDesktop : undefined)}
           >
             About
           </NavLink>
           <NavLink
             to='/Skills'
             className=''
-            style={({ isActive }) => (isActive ? active : undefined)}
+            style={({ isActive }) => (isActive ? activeDesktop : undefined)}
           >
             Skills
           </NavLink>
           <NavLink
             to='/Portfolio'
             className=''
-            style={({ isActive }) => (isActive ? active : undefined)}
+            style={({ isActive }) => (isActive ? activeDesktop : undefined)}
           >
             Portfolio
           </NavLink>
           <NavLink
             to='/Contact'
             className=''
-            style={({ isActive }) => (isActive ? active : undefined)}
+            style={({ isActive }) => (isActive ? activeDesktop : undefined)}
           >
             Contact
           </NavLink>
