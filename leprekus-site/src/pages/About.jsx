@@ -13,8 +13,10 @@ export default function About() {
   const bgs = [uniformCentralStoreFront, clinicaMedica, uniformCentralStoreFront/*add codecademy bg*/]
   //prefetch images on site load
   const imgs = [uniformCentral, aroc, codecademy]
-  const links = ['https://clinica-medica.leprekus.dev/', 'https://clinica-medica.leprekus.dev/', 'https://clinica-medica.leprekus.dev/']
-  const text = ['Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eligendi ex enim voluptatem repellat vel expedita soluta? Ab, maxime accusamus numquam sunt quas, eligendi soluta rem a, harum fugiat deleniti', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eligendi ex enim voluptatem repellat vel expedita soluta? Ab, maxime accusamus numquam sunt quas, eligendi soluta rem a, harum fugiat deleniti', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eligendi ex enim voluptatem repellat vel expedita soluta? Ab, maxime accusamus numquam sunt quas, eligendi soluta rem a, harum fugiat deleniti',]
+  const links = ['https://uniformcentral.ca/', 'https://clinica-medica.leprekus.dev/', 'https://clinica-medica.leprekus.dev/']
+  const text = ['My job at Uniform Central is where I was able to use my hobby in real life for the first time. I started using python to write simple scripts in order to migrate the inventory from our previous software to shopify. I then organized and separated the products by brand, category, and brand among other tags and filters. This made finding products easier for people browsing online.', 
+                'This is my first comission developed for a client. Which happened to be a medical clinic. ',
+                'All of my skills and knowledge stemmed off the Codecademy Frontend Engineer Career path. From them on I have continued to further my learning and delving deeper by myself.']
   return (
     <Layout>
       <Cardholder title='My Experience'>
@@ -30,15 +32,20 @@ export default function About() {
           <h5>
             Check the <Link to="/skills" class="link text-pink-400">Skills</Link> section for a TLDR;</h5>
           <p className='leading-8'>
-            Proactiveness: I constantly look for ways to improve processes and streamline workflows. In order to ensure that projects are completed efficiently and effectively. 
+            Proactiveness: I constantly look for ways to improve streamline workflows.  
             <br />
-            Communication: I have excellent communication skills, both written and verbal. I am able to clearly and effectively convey ideas and collaborate with team members to achieve shared goals.
             <br />
-            Problem-solving: I have great problem-solving skills and have the ability to analyze complex issues and develop effective solutions. 
+            Communication: I am able to clearly and effectively convey ideas and collaborate with team members to achieve shared goals.
+            <br />
+            <br />
+            Problem-solving: I have the ability to analyze complex issues and develop effective solutions. 
+            <br />
             <br />
             Goal-oriented: I am highly goal-oriented individual whose focused on delivering results. 
             <br />
+            <br />
             Adaptability: I am highly adaptable and able to work in a fast-paced, ever-changing environment. I am able to quickly learn new skills and technologies and integrate them into my work.
+            <br />
             <br />
             Overall, I believe that my soft skills complement my technical skills as a frontend developer and make me a valuable asset to our team.
           </p>
