@@ -1,12 +1,7 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import Layout from '../components/Layout';
 
 function Contact() {
-  const navigate = useNavigate()
-  const handleSubmit = () => {
-    navigate('/contact')
-  }
+
   return (
     <section
       className='flex flex-col text-center
@@ -19,10 +14,8 @@ function Contact() {
       <form
         className='flex flex-col items-start w-full
       md:w-1/2'
-        netflify
         name='contact'
         method='POST'
-        onSubmit={handleSubmit}
       >
          <input
           type='hidden'
