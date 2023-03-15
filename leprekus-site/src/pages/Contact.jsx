@@ -16,6 +16,7 @@ function Contact() {
       md:w-1/2'
         name='contact'
         method='POST'
+        action='/Success'
       >
          <input
           type='hidden'
