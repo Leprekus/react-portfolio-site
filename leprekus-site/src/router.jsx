@@ -4,6 +4,7 @@ import Contact from './pages/Contact';
 import Landing from './pages/Landing';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
+import Success from './pages/Success';
 import Root from './Root';
 
 const router = createBrowserRouter([
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
         {
             path: '/contact',
             element: <Contact/>
+        },
+        {
+            path: '/Success',
+            element: <Success/>
         },
     ]
   },
